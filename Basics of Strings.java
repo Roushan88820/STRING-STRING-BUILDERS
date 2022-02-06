@@ -4,8 +4,15 @@ import java.io.*;
 public  class Main {
     public static void main(String [] args) {
 
-        String s = "hello_String"; // (declaration and defination)
-        System.out.println(s);
+        String s = "hello_String"; // ( declaration  and defination)
+        System.out.println(s); 
+        
+********************************************************************************************************************************************************************
+            OUTPUT
+     
+            hello_String
+            
+*******************************************************************************************************************************************************************
 
         // string is also like an array but not exactly an array
         // Strings also posses the length property parr yhaa length ekk function hai 
@@ -17,34 +24,53 @@ public  class Main {
             System.out.println(ch);
 
         }
+        
+ *******************************************************************************************************************************************************************
+                                                           OUTPUT
+h
+e
+l
+l
+o
+_
+S
+t
+r
+i
+n
+g        
+            
+*******************************************************************************************************************************************************************        
 
         // char is a datatype which stores a single alphabet;
          char r = 'P' ;
-         System.out.println(r);
+         System.out.println(r);        // output => P
+        
 
 
           // concept of + and +=
            
           s = s + " Motaa" ;  // purane s mei Motaa add hoo jaega baad mei
 
-          System.out.println(s);
+          System.out.println(s);   //output => hello_String Motaa
 
 
           s += " Motaaa";  // purane s mei Motaaa add hogaa baad mei 
 
-          System.out.println(s);
+          System.out.println(s);   // output => hello_String Motaa Motaaa
+
 
           s = "motaa " + s ; // motaa pehlee aaega frr s mei pdaa huaa string aaega
 
-          System.out.println(s);
+          System.out.println(s);   // output => motaa hello_String Motaa Motaaa
 
           // Answer this
           
-          System.out.println("Roushan" + 10 + 20); // answer => Roushan1020 (String + integer = string);
+          System.out.println("Roushan" + 10 + 20); // answer => Roushan1020 (String + integer = string);   // output => Roushan1020
 
-          System.out.println( 10 + 20  + "Roushan");// answer => 30Roushan  (integer +  String = string)
+          System.out.println( 10 + 20  + "Roushan");// answer => 30Roushan  (integer +  String = string)  // output => 30Roushan
 
-          System.out.println(10 + 20 + "Roushan" + 10 + 20); // answer => 30Roushan1020 
+          System.out.println(10 + 20 + "Roushan" + 10 + 20); // answer => 30Roushan1020                  // output =>  30Roushan1020
 
           // SUBSTRING
 
@@ -60,12 +86,34 @@ public  class Main {
           System.out.println(str.substring(4));      // from 4 to 7 index takk print karega
           System.out.println(str.substring(4,7));   // from 4 to 6  index takk print karega
           System.out.println(str.substring(1));     // from 1 to end index takk print karega
+        
+********************************************************************************************************************************************************************
+            OUTPUT
+R
+RO
+ROU
+ROUS
+ROUSH
+ROUSHA
+ROUSHAN
+ROUSHAN
+HAN
+HAN
+OUSHAN          
+*******************************************************************************************************************************************************************
+
 
           // TAKING INPUT
 
           Scanner scn = new Scanner(System.in);
-          String s2 =  scn.nextLine(); // ye enter takk read karr leta haii
+          String s2 =  scn.nextLine(); // ye enter takk read karr leta haii 
+        
+         // ekk hotaa hai scn.next() joo sirff input meii pehle space baar takk read karr leta hai
+        
           System.out.println(s2);
          
     }
 }
+
+Input :=> hello roushan
+Output :=> hello roushan
