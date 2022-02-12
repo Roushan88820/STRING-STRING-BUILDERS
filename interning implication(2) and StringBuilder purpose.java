@@ -1,3 +1,6 @@
+// POOR PERFORMANCE OF STRING BECAUSE OF IMMUTABILITY AND PURPOSE OF USING STRINGBUILDER INSTEAD OF STRING IN JAVA
+
+
 import java.util.*;
 import java.io.*;
 
@@ -10,10 +13,10 @@ public class Main {
 
         // StringBuilder sb = new StringBuilder();
 
-        long start = System.currentTimeMillis();
+        long start = System.currentTimeMillis();   // System.currentTimeMillis() :-> yee hmee time btaata haii since 1 jan 1970
 
         // for(int i = 0 ; i< 100000 ; i++) {
-        //     sb.append(i);
+        //     sb.append(i);    ;-> string builder meii string meii kuchh v add karnee ke liyee append function kaa use kartee haii
         // }
 
         
@@ -22,9 +25,9 @@ public class Main {
             s = s + i;
         }
         
-        long end = System.currentTimeMillis() ;
+        long end = System.currentTimeMillis() ;   // :-> long ekk integer datatype haiii
 
-        long duration = end - start ;
+        long duration = end - start ;  // time btaegaa milliseconds meii
          
         System.out.println(duration);
         
