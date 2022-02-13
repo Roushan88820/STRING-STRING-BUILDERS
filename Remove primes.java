@@ -1,3 +1,42 @@
+                                                                             QUESTION
+Remove Primes
+Easy
+
+1. You are given an ArrayList of positive integers.
+2. You have to remove prime numbers from the given ArrayList and return the updated ArrayList.
+
+Note -> The order of elements should remain same.
+
+Constraints
+1 <= N <= 10000
+
+Format
+
+Input
+
+A number N
+arr1
+arr2.. N numbers
+
+Output
+
+An Arraylist
+
+Example
+Sample Input
+
+4
+3 12 13 15
+
+Sample Output
+[12, 15]                                                                             
+
+
+
+
+********************************************************************************************************************************************************************************
+                                                                            {CODE}
+
 import java.util.*;
 
 public class Main {
@@ -27,7 +66,7 @@ public class Main {
             boolean isprime = Isprime(val);
             if(isprime == true) {
                 list.remove(i);
-                i--;
+                i--; // SBSEEEE IMPORTANT STEP
             }
         }
     }
@@ -51,3 +90,20 @@ public class Main {
         return prime_hai;
     }
 }
+
+********************************************************************************************************************************************************************************
+                                                                                    OUTPUT
+ Input
+
+4
+3 12 13 15
+
+ Output
+ 
+[12, 15]
+
+********************************************************************************************************************************************************************************
+                                                                                    kyaaa sikhee
+                                                                                    
+ jabb bhii arraylist meii remove karte haii too yaa too i-- karenge yaa too frr ultaa loop chlaenge kukii remove karte hii saare indexes -1 see khisakk jaate haii                                                                                   
+                                                                                    
